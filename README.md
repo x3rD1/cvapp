@@ -4,10 +4,10 @@ A personal project built with React to practice and improve key React skills suc
 
 ## Features
 
-Dynamic form inputs using reusable functional components.
-Props passed to components to customize input fields and behavior.
-useState hook to manage form state and capture user input.
-Clean, modular structure to practice component-based architecture.
+- Dynamic form inputs using reusable functional components.
+- Props passed to components to customize input fields and behavior.
+- useState hook to manage form state and capture user input.
+- Clean, modular structure to practice component-based architecture.
 
 ## Learning Goals
 
