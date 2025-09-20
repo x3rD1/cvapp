@@ -1,12 +1,23 @@
-# React + Vite
+# CV Application Project (Resume Builder Clone)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **clone of the Resume Genius' Resume Builder** built using React to practice and improve key React skills such as writing in JSX, creating functional components, using props, and managing state with hooks. It replicates the core design and layout but is not affiliated with or endorsed by Resume Genius.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dynamic form inputs using reusable functional components.
+- Props passed to components to customize input fields and behavior.
+- useState hook to manage form state and capture user input.
+- Clean, modular structure to practice component-based architecture.
 
-## Expanding the ESLint configuration
+## Learning Goals
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### This project was primarily built to:
+
+1. Strengthen understanding of JSX syntax and embedding JavaScript expressions.
+2. Practice creating functional components and reusing them across the application.
+3. Learn how to pass and use props effectively for flexibility.
+4. Gain hands-on experience with React hooks — specifically useState — for handling component state.
+
+#### Credits
+
+- Original design/inspiration: resumegenius.com
