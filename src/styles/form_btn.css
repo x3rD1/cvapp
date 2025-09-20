@@ -1,0 +1,28 @@
+.button-wrapper {
+  display: flex;
+  gap: 2em;
+  width: 460px;
+  margin-top: 2em;
+}
+
+button {
+  width: 100%;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.backBtn:hover {
+  border-color: #f1804c;
+}
+.backBtn:focus {
+  outline: none;
+}
+
+.saveBtn {
+  background-color: #f1804c;
+  color: #fff;
+}
+.saveBtn:hover {
+  border-color: rgb(199, 59, 59);
+}
