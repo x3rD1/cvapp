@@ -1,0 +1,47 @@
+.exp-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "job job job company company company"
+    "country country s-p s-p city city"
+    "sMonth sMonth sMonth sYear sYear sYear"
+    "eMonth eMonth eMonth eYear eYear eYear";
+  gap: 1em;
+  max-width: 40%;
+  margin-top: 1.5em;
+}
+
+.exp-form-wrapper .job {
+  grid-area: job;
+}
+.exp-form-wrapper .company {
+  grid-area: company;
+}
+.exp-form-wrapper .country {
+  grid-area: country;
+}
+.exp-form-wrapper .s-p {
+  grid-area: s-p;
+}
+.exp-form-wrapper .city {
+  grid-area: city;
+}
+.exp-form-wrapper .sMonth {
+  grid-area: sMonth;
+}
+.exp-form-wrapper .sYear {
+  grid-area: sYear;
+}
+.exp-form-wrapper .eMonth {
+  grid-area: eMonth;
+}
+.exp-form-wrapper .eYear {
+  grid-area: eYear;
+}
+
+.exp-heading-layout {
+  display: grid;
+  margin-top: 2em;
+  text-align: center;
+  gap: 0.8em;
+}

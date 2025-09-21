@@ -4,6 +4,7 @@
 .builder-header {
   max-width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 .builder-header p {
   margin-top: 1.2em;

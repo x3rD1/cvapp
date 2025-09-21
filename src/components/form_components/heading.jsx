@@ -1,10 +1,8 @@
-export default function Heading() {
+export default function Heading({ title, paragraph }) {
   return (
     <>
-      <h1>Let's start with the basics</h1>
-      <p>
-        To help employers contact you, add your name, email and phone number.
-      </p>
+      <h1>{title}</h1>
+      <p>{paragraph}</p>
     </>
   );
 }

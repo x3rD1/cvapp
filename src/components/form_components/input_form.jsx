@@ -40,9 +40,9 @@ export default function InputForm() {
   );
 }
 
-function InputWrapper({ placeholder, name, id, type }) {
+export function InputWrapper({ placeholder, name, id, type }) {
   return (
-    <div className="input-wrapper">
+    <div className={`input-wrapper ${id}`}>
       <div className="input-container">
         <label className="input-label" htmlFor={id}></label>
 
