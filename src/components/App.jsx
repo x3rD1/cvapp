@@ -1,9 +1,16 @@
 import "/src/App.css";
 import Form from "./form_components/form.jsx";
+import Experience from "./Experience.jsx";
+import { useState } from "react";
 
 function App() {
-  let id = 0;
-  return <>{id === 0 ? <Form /> : <CvApp />}</>;
+  const [step, setStep] = useState("form");
+  return (
+    <>
+      {step === "form" && <Form next={() => setStep("exp")} />}
+      {step === "exp" && <Experience />}
+    </>
+  );
 }
 
 export default App;

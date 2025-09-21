@@ -5,13 +5,6 @@
   margin-top: 2em;
 }
 
-button {
-  width: 100%;
-  font-weight: 500;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-}
-
 .backBtn:hover {
   border-color: #f1804c;
 }
