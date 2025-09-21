@@ -7,7 +7,7 @@
     "sMonth sMonth sMonth sYear sYear sYear"
     "eMonth eMonth eMonth eYear eYear eYear";
   gap: 1em;
-  max-width: 40%;
+  max-width: 100%;
   margin-top: 1.5em;
 }
 
