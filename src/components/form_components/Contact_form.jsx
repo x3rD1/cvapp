@@ -1,4 +1,4 @@
-import Heading from "./heading";
+import Heading from "../heading";
 import InputForm from "./input_form";
 import ButtonWrapper from "./Contact_button";
 

@@ -1,4 +1,4 @@
-import Heading from "../form_components/heading";
+import Heading from "../heading";
 import { InputWrapper } from "../form_components/input_form";
 import { Button } from "../form_components/Contact_button";
 import "/src/styles/experience_form.css";

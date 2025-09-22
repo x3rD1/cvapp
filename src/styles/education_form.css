@@ -1,0 +1,31 @@
+.edu-heading {
+  display: grid;
+  gap: 0.8em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.edu-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.date-omission label {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1em;
+  padding: 0.3em;
+  gap: 0.5em;
+  max-width: fit-content;
+}
+input {
+  transition: background-color 0.3s ease;
+}
+input:disabled {
+  background-color: #e4e4dd;
+}
+#checkbox {
+  max-width: fit-content;
+}

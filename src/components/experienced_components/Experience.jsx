@@ -1,6 +1,6 @@
 import "/src/styles/experience.css";
 
-export default function Experience({ goNext }) {
+export default function Experience({ goNextYes, goNextNo }) {
   return (
     <div className="builder-wrapper-layout">
       <div className="builder-header">
@@ -11,8 +11,8 @@ export default function Experience({ goNext }) {
         </p>
       </div>
       <div className="builder-buttons">
-        <button onClick={goNext}>Yes</button>
-        <button>No</button>
+        <button onClick={goNextYes}>Yes</button>
+        <button onClick={goNextNo}>No</button>
       </div>
     </div>
   );

@@ -40,13 +40,19 @@ export default function InputForm() {
   );
 }
 
-export function InputWrapper({ placeholder, name, id, type }) {
+export function InputWrapper({ placeholder, name, id, type, isChecked }) {
   return (
     <div className={`input-wrapper ${id}`}>
       <div className="input-container">
         <label className="input-label" htmlFor={id}></label>
 
-        <input type={type} name={name} id={id} placeholder={placeholder} />
+        <input
+          type={type}
+          name={name}
+          id={id}
+          placeholder={placeholder}
+          disabled={isChecked}
+        />
       </div>
     </div>
   );
