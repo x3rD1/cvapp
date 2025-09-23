@@ -3,7 +3,7 @@ import { InputWrapper } from "../form_components/input_form";
 import { Button } from "../form_components/Contact_button";
 import "/src/styles/education_form.css";
 import { useState } from "react";
-export default function EducationForm({ goBack }) {
+export default function EducationForm({ goBack, goNext }) {
   const [isChecked, setChecked] = useState(false);
   return (
     <>
@@ -46,7 +46,7 @@ export default function EducationForm({ goBack }) {
       </div>
       <div className="button-wrapper">
         <Button className="backBtn" btnName="Back" goBack={goBack} />
-        <Button className="saveBtn" btnName="Continue" />
+        <Button className="saveBtn" btnName="Continue" goNext={goNext} />
       </div>
     </>
   );
