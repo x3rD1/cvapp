@@ -5,12 +5,12 @@ import "/src/styles/skills.css";
 
 export default function Skills({ goBack, goNext }) {
   const [text, setText] = useState("");
-  const [newLineCount, setNewLineCount] = useState(0);
+
+  const lineCount = (text.match(/\n/g) || []).length;
 
   function handleKeyDown(e) {
     if (e.key === "Enter") {
       e.preventDefault();
-      setNewLineCount(newLineCount + 1);
       const bullet = "• ";
       const { selectionStart, selectionEnd } = e.target;
 
@@ -50,7 +50,7 @@ export default function Skills({ goBack, goNext }) {
           cols={50}
           placeholder="Add, edit and write here."
         />
-        <p>Skills: {newLineCount} (Aim for 6-10)</p>
+        <p>Skills: {lineCount} (Aim for 6-10)</p>
       </div>
       <div className="button-wrapper">
         <Button className="backBtn" btnName="Back" goBack={goBack} />
