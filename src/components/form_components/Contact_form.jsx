@@ -2,7 +2,7 @@ import Heading from "../heading";
 import InputForm from "./input_form";
 import ButtonWrapper from "./Contact_button";
 
-export default function Contact({ goNext }) {
+export default function Form({ input, setInput, goNext }) {
   const contact = {
     title: "Let's start with the basics",
     paragraph:
@@ -13,7 +13,7 @@ export default function Contact({ goNext }) {
       <div className="form-heading-layout">
         <Heading title={contact.title} paragraph={contact.paragraph} />
       </div>
-      <InputForm />
+      <InputForm input={input} setInput={setInput} />
       <ButtonWrapper goNext={goNext} />
     </>
   );

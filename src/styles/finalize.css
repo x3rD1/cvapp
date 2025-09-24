@@ -1,0 +1,47 @@
+.final-contact-wrapper {
+  width: 100%;
+  max-width: 80%;
+  display: grid;
+  padding-bottom: 1em;
+  gap: 1em;
+  border-bottom: 1px solid #7c7b7b;
+}
+
+.name-info .fullName {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #7c7b7b;
+}
+.job-title,
+.fullName,
+.skills {
+  letter-spacing: 0.1rem;
+}
+.job-title,
+.skills {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact-info {
+  display: flex;
+  gap: 1em;
+  font-size: 1.1rem;
+}
+.contact-info span {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #7c7b7b;
+}
+.final-summary-container,
+.final-skills-container {
+  width: 80%;
+}
+
+.final-skills-container {
+  margin-top: 1em;
+}
+
+.skills {
+  color: #7c7b7b;
+}

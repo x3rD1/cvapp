@@ -1,12 +1,9 @@
-import { useState } from "react";
 import Heading from "./heading";
 import { Button } from "./form_components/Contact_button";
 import "/src/styles/skills.css";
 
-export default function Skills({ goBack, goNext }) {
-  const [text, setText] = useState("");
-
-  const lineCount = (text.match(/\n/g) || []).length;
+export default function Skills({ input, setInput, goBack, goNext }) {
+  const lineCount = (input.skills || "").match(/\n/g)?.length || 0;
 
   function handleKeyDown(e) {
     if (e.key === "Enter") {
@@ -15,12 +12,12 @@ export default function Skills({ goBack, goNext }) {
       const { selectionStart, selectionEnd } = e.target;
 
       const newText =
-        text.substring(0, selectionStart) +
+        input.skills.substring(0, selectionStart) +
         "\n" +
         bullet +
-        text.substring(selectionEnd);
+        input.skills.substring(selectionEnd);
 
-      setText(newText);
+      setInput({ ...input, skills: newText });
 
       setTimeout(() => {
         const newPos = selectionStart + bullet.length + 1;
@@ -29,7 +26,7 @@ export default function Skills({ goBack, goNext }) {
     }
   }
   const handleChange = (e) => {
-    setText(e.target.value);
+    setInput({ ...input, skills: e.target.value });
   };
 
   return (
@@ -42,10 +39,10 @@ export default function Skills({ goBack, goNext }) {
       </div>
       <div className="skills-text-area">
         <textarea
-          value={text}
+          value={input.skills}
           onChange={handleChange}
           onKeyDown={handleKeyDown}
-          onFocus={() => !text && setText("• ")}
+          onFocus={() => !input.skills && setInput({ ...input, skills: "• " })}
           rows={10}
           cols={50}
           placeholder="Add, edit and write here."

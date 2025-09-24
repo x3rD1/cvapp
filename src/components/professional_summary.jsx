@@ -2,7 +2,7 @@ import Heading from "./heading";
 import { Button } from "./form_components/Contact_button";
 import "/src/styles/summary.css";
 
-export default function Summary({ goBack, goNext }) {
+export default function Summary({ input, setInput, goBack, goNext }) {
   return (
     <>
       <div className="summary-heading">
@@ -13,6 +13,8 @@ export default function Summary({ goBack, goNext }) {
       </div>
       <div className="summary-text-area">
         <textarea
+          value={input.summary}
+          onChange={(e) => setInput({ ...input, summary: e.target.value })}
           id="summary"
           rows={10}
           cols={50}
