@@ -1,9 +1,9 @@
-import Heading from "../heading";
+import Heading from "../form_components/heading";
 import { InputWrapper } from "../form_components/input_form";
 import { Button } from "../form_components/Contact_button";
 import "/src/styles/education_form.css";
 import { useState } from "react";
-export default function EducationForm({ goBack, goNext }) {
+export default function EducationForm({ input, setInput, goBack, goNext }) {
   const [isChecked, setChecked] = useState(false);
   return (
     <>
@@ -15,17 +15,52 @@ export default function EducationForm({ goBack, goNext }) {
       </div>
       <div className="edu-form-wrapper-container">
         <div className="edu-form-wrapper">
-          <InputWrapper placeholder="School Name" />
-          <InputWrapper placeholder="School Location" type="text" />
-          <InputWrapper placeholder="Degree or Program" type="text" />
-          <InputWrapper placeholder="Field of Study" type="text" />
           <InputWrapper
+            value={input.schoolName}
+            name="schoolName"
+            input={input}
+            setInput={setInput}
+            placeholder="School Name"
+          />
+          <InputWrapper
+            value={input.schoolLoc}
+            name="schoolLoc"
+            input={input}
+            setInput={setInput}
+            placeholder="School Location"
+            type="text"
+          />
+          <InputWrapper
+            value={input.degree}
+            name="degree"
+            input={input}
+            setInput={setInput}
+            placeholder="Degree or Program"
+            type="text"
+          />
+          <InputWrapper
+            value={input.fieldOfStudy}
+            name="fieldOfStudy"
+            input={input}
+            setInput={setInput}
+            placeholder="Field of Study"
+            type="text"
+          />
+          <InputWrapper
+            value={input.gradMon}
+            name="gradMon"
+            input={input}
+            setInput={setInput}
             id="gradMonth"
             placeholder="Graduation Month"
             type="text"
             isChecked={isChecked}
           />
           <InputWrapper
+            value={input.gradYear}
+            name="gradYear"
+            input={input}
+            setInput={setInput}
             id="gradYear"
             placeholder="Graduation Year"
             type="text"

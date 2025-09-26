@@ -27,6 +27,30 @@ export default function Finalize({ input }) {
         <p className="skills">Skills</p>
         <div className="skills-layout">{input.skills}</div>
       </div>
+      <div className="final-exp-container">
+        <p>{input.jobTitle && "Experience"}</p>
+        <div className="job-info-container">
+          <p className="final-job-title">{input.jobTitle}</p>
+          <p className="final-company-info">{input.companyName}</p>
+          <p className="final-job-YOS">
+            {input.sMonth} {input.sYear} — {input.eMonth} {input.eYear}
+          </p>
+        </div>
+      </div>
+      <div className="final-edu-container">
+        <p>Education</p>
+        <div className="final-school-info">
+          <p className="final-edu-degree">
+            {input.degree} in {input.fieldOfStudy}
+          </p>
+          <p className="final-edu-school">
+            {input.schoolName}, {input.schoolLoc}
+          </p>
+          <p className="final-edu-year">
+            {input.gradMon} {input.gradYear}
+          </p>
+        </div>
+      </div>
     </>
   );
 }

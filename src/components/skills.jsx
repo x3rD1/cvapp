@@ -1,4 +1,4 @@
-import Heading from "./heading";
+import Heading from "./form_components/heading";
 import { Button } from "./form_components/Contact_button";
 import "/src/styles/skills.css";
 

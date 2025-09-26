@@ -21,6 +21,22 @@ function App() {
     zp: "",
     summary: "",
     skills: "",
+    jobTitle: "",
+    companyName: "",
+    country: "",
+    sorp: "",
+    city: "",
+    sMonth: "",
+    sYear: "",
+    eMonth: "",
+    eYear: "",
+    schoolName: "",
+    schoolLoc: "",
+    degree: "",
+    fieldOfStudy: "",
+    gradMonth: "",
+    gradYear: "",
+    exp: "",
   });
   const steps = {
     form: (setStep) => (
@@ -32,9 +48,18 @@ function App() {
         goNextNo={() => setStep("edu")}
       />
     ),
-    expForm: (setStep) => <ExperienceForm goBack={() => setStep("form")} />,
+    expForm: (setStep) => (
+      <ExperienceForm
+        input={input}
+        setInput={setInput}
+        goBack={() => setStep("form")}
+        goNext={() => setStep("edu")}
+      />
+    ),
     edu: (setStep) => (
       <EducationForm
+        input={input}
+        setInput={setInput}
         goBack={() => setStep("exp")}
         goNext={() => setStep("skills")}
       />
